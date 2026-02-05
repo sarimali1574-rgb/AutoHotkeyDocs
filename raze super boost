@@ -1,0 +1,17 @@
+; Valorant Raze Tech Macro: Middle Mouse Button triggers Q then L with 55ms delay
+; Middle mouse button = MButton
+
+MButton::
+    ; Press and release Q
+    Send, {q down}
+    Sleep, 20       ; tiny hold so the game registers it
+    Send, {q up}
+    
+    ; Wait 55ms
+    Sleep, 55
+    
+    ; Press and release L
+    Send, {l down}
+    Sleep, 20       ; tiny hold
+    Send, {l up}
+return
